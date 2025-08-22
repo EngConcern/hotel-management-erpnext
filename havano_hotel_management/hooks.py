@@ -82,8 +82,19 @@ app_include_css = "/assets/havano_hotel_management/css/app.css"
 # Installation
 # ------------
 
-# before_install = "havano_hotel_management.install.before_install"
+
+# CRITICAL: Installation hooks - these run during app installation
+before_install = "havano_hotel_management.install.before_install"
 after_install = "havano_hotel_management.install.after_install"
+
+# Uninstallation
+# --------------
+
+before_uninstall = "havano_hotel_management.install.before_uninstall"
+
+
+# before_install = "havano_hotel_management.install.before_install"
+#after_install = "havano_hotel_management.install.after_install"
 
 # Uninstallation
 # ------------
