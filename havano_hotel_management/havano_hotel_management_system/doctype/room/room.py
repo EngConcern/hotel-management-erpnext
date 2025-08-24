@@ -11,7 +11,7 @@ class Room(Document):
         if self.get_doc_before_save():
             if self.status != self.get_doc_before_save().status:
                 frappe.throw(
-            f"You are not allowed to change status from the Kanban View. "
+            f"You are not allowed to change status from the Kanban Viewyrtd. "
             f"(Tried changing from {self.get_doc_before_save().status} → {self.status})"
         )
 
