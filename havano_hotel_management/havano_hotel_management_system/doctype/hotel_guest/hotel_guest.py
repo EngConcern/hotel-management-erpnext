@@ -27,9 +27,22 @@ class HotelGuest(Document):
 				"customer_name": self.full_name,
 				"customer_type": "Individual",
 				"customer_group": hotel_customer_group,
+                "customer_type": "Individual",
+                "custom_trade_name": self.full_name,
+                "custom_customer_tin": "123456789",
+                "custom_customer_vat": "VAT",
+                "custom_customer_address": "Harare Zimbabwe",
+                "custom_telephone_number": "123456789",
+                "custom_telephone_number": "123456789",
+                "custom_province": "Harare",
+                "custom_street": "123 Harare St",
+                "custom_city": "Harare",
+                "custom_house_no": "2000",
+                "custom_email_address": "customer@mail.com",
 				"territory": "All Territories"
 			})
-
+#custom_trade_name, custom_customer_tin, custom_customer_vat, custom_customer_address, custom_telephone_number, custom_province, 
+# custom_street, custom_city, custom_house_no, custom_email_address
 			# Save the new Customer
 			new_customer.insert(ignore_permissions=True)
 			# frappe.msgprint(_("Customer created for Guest {0}").format(self.full_name))
