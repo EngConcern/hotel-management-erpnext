@@ -112,7 +112,7 @@ frappe.ui.form.on("Check Out", {
                     callback: function(r) {
                         if (r.message) {
                             frappe.show_alert({
-                                message: __("Room {0} is now available", [frm.doc.room]),
+                                message: __("Room {0} is now availablefd", [frm.doc.room]),
                                 indicator: 'green'
                             });
                             // if(frm.doc.payment_entry){
@@ -144,7 +144,7 @@ frappe.ui.form.on("Check Out", {
 
         
         frappe.show_alert({
-            message: __("Guest checked out successfully"),
+            message: __("Guest checked out successfullys"),
             indicator: 'green'
         });
     }
