@@ -10,7 +10,10 @@ class Room(Document):
         # Prevent changing status (e.g., via Kanban View)
         if self.get_doc_before_save():
             if self.status != self.get_doc_before_save().status:
-                frappe.throw("You are not allowed to change status from the Kanban View." + self.status + self.get_doc_before_save().status )
+                frappe.throw(
+            f"You are not allowed to change status from the Kanban View. "
+            f"(Tried changing from {self.get_doc_before_save().status} → {self.status})"
+        )
 
     def before_insert(self):
         self.validate_room_item()
