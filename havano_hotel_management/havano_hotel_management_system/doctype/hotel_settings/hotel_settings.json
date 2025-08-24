@@ -44,7 +44,7 @@
   },
   {
    "default": "Hotel Customers",
-   "fieldname": "hotel_customer_group",
+   "fieldname": "hotel_customer_group", 
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Hotel Customer Group",
