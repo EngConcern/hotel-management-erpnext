@@ -90,6 +90,7 @@ frappe.ui.form.on("Check Out", {
                 doctype: "Room",
                 name: frm.doc.room,
                 fieldname: {
+                    "name": frm.doc.room,
                     "status": "Available",
                     "current_checkin": "",
                     "current_guest": "",

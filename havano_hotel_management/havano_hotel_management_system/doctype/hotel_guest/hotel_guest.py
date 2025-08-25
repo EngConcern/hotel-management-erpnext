@@ -33,7 +33,6 @@ class HotelGuest(Document):
                 "custom_customer_vat": "VAT",
                 "custom_customer_address": "Harare Zimbabwe",
                 "custom_telephone_number": "123456789",
-                "custom_telephone_number": "123456789",
                 "custom_province": "Harare",
                 "custom_street": "123 Harare St",
                 "custom_city": "Harare",
