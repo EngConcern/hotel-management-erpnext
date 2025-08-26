@@ -213,7 +213,7 @@ frappe.ui.form.on("Check In", {
                     fieldname: ["status", "room_item"]
                 },
                 callback: function(r) {
-                    if(r.message && r.message.status !== "Available") {
+                    if(r.message && r.message.status === "Occupied") {
                         frm.set_value("room", "");
                         frappe.msgprint(__("Room {0} is not available. Please select an available room.", [frm.doc.room]));
                     }else {
