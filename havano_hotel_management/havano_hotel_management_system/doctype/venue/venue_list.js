@@ -3,7 +3,7 @@ frappe.listview_settings['Venue'] = {
         check_overdue_checkouts();
         update_status_counts();
         // Switch to the existing "Venue View" kanban view on load
-        frappe.set_route("List", "Venue", "Kanban", "Venue View");
+        frappe.set_route("List", "Venue", "Venue View", "Kanban");
     
     },
    
