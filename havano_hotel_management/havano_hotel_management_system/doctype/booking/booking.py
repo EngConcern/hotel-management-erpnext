@@ -53,12 +53,12 @@ def create_sales_invoice(doc, method=None, charge=0):
         si.posting_date = doc.check_in_date
         si.due_date = doc.check_out_time
         si.company = company
-        si.debit_to = debit_to
+        si.debit_to = debit_to 
         
         # Add item
         si.append("items", {
-            "item_code": venue.venue_item,
-            "item_name": venue.venue_item,
+            "item_code": venue.venue_name,
+            "item_name": venue.venue_name,
             "description": doc.name,
             "qty": 1,
             "rate": amount,
